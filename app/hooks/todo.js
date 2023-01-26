@@ -136,14 +136,14 @@ export function useTodo() {
               if (todo.account.idx === todoID) {
                 return 
               }
-      
+       
               return todo
             }),
           )
     }
 
 
-    
+
     const incompleteTodos = useMemo(() => todos.filter((todo) => !todo.account.marked), [todos])
     const completedTodos = useMemo(() => todos.filter((todo) => todo.account.marked), [todos])
 
